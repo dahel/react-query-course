@@ -46,20 +46,20 @@ export default function Issues() {
           {/* <Mutations /> */}
           {/* <Pagination /> */}
           {/* <InfiniteQuery /> */}
-          <RenderOptimizations />
+          {/* <RenderOptimizations /> */}
 
           {/* START comment for making examples above working */}
-          {/* <IssuesList
+          <IssuesList
             labels={labels}
             status={status}
             pageNum={pageNum}
             setPageNum={setPageNum}
-          /> */}
+          />
           {/* END comment for making examples above working */}
         </section>
         <aside>
           {/* START comment for making examples above working */}
-          {/* <LabelList
+          <LabelList
             selected={labels}
             toggle={(label) => {
               setLabels((currentLabels) =>
@@ -71,7 +71,7 @@ export default function Issues() {
               );
               setPageNum(1);
             }}
-          /> */}
+          />
           {/* END comment for making examples above working */}
           <h3>Status</h3>
           <StatusSelect

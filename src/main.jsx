@@ -11,12 +11,12 @@ const queryClient = new QueryClient();
 
 new Promise((res) => setTimeout(res, 100))
   // START comment for making examples above working
-  // .then(() =>
-  //   worker.start({
-  //     quiet: true,
-  //     onUnhandledRequest: "bypass",
-  //   })
-  // )
+  .then(() =>
+    worker.start({
+      quiet: true,
+      onUnhandledRequest: "bypass",
+    })
+  )
   // END comment for making examples above working
   .then(() => {
     ReactDOM.render(
